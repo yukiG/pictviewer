@@ -2,12 +2,7 @@
 # -*- coding: utf-8 -*-
 =begin
 = PictViewer.rb
-Author : Kouji Kuramoto
-
-このプログラムは、Kadai.rbのハッカソン01で作成したものである。
-コマンドライン上で画像ファイルの引数を与えて実行することで、
-簡易ビューアとして動作する。
-
+Author : Fei
 =end
 
 
