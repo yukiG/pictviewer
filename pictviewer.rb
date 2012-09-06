@@ -2,16 +2,12 @@
 # -*- coding: utf-8 -*-
 =begin
 = PictViewer.rb
-Author : Kouji Kuramoto
-
-このプログラムは、Kadai.rbのハッカソン01で作成したものである。
-コマンドライン上で画像ファイルの引数を与えて実行することで、
-簡易ビューアとして動作する。
-
+作成者 : Fei
 =end
 
-
 require  'gtk2'
+require  'rubygems'
+require  'RMagick'
 
 # ファイル名の取得
 filename = ARGV[0]
@@ -30,7 +26,10 @@ width, height = image.pixbuf.width, image.pixbuf.height
 
 # リサイズ
 if width > WINDOW_SIZE[0] || height > WINDOW_SIZE[1]
-  image.pixbuf = image.pixbuf.scale(*WINDOW_SIZE)
+  # 比率の自動計算(height基準)
+  RATES = WINDOW_SIZE[1].to_f / height
+  print RATES
+  image.pixbuf = image.pixbuf.scale(width*RATES, height*RATES)
 end
 
 # ウィンドウ消去
