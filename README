@@ -10,6 +10,13 @@
 -- imagemagick
 -- rmagick
 
++++ 補足
+imagemagickとrmagickの導入メモ(Ubuntu 12.10で確認)
+
+- sudo aptitude install imagemagick libimagemagick libmagickcore libmagickcore-dev libmagickwand-dev
+- sudo gem install rmagick
+
+
 ++ 内容
 - コマンドラインから画像ファイル指定して実行
 - 簡易ビューアとして画像を描画
