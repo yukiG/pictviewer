@@ -1,9 +1,9 @@
 +
-+ pictviewer(仮)
++ pictviewer
 + Author:Fei
 + 
 
-++ 必要なもの(多分)
++++ 動作環境
 - ruby
 - gem
 -- gtk2
