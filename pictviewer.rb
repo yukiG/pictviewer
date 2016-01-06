@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 =begin
 = PictViewer.rb
-作成者 : Fei
-Author : Fei
+作成者 : yukiji
+Author : yukiji
 =end
 
 require  'gtk2'
